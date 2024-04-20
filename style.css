@@ -148,3 +148,22 @@ section > .planos {
     display: flex;
     gap: 50px;
 }
+
+.linha-conheca {
+    margin-bottom: 60px;
+    width: 1300px;
+    height: 4px;
+    background: #000000;
+    margin-top: 22px;
+}
+
+section > .conheca-title {
+    font-size: 125px;
+    margin-top: 22px;
+}
+
+.conheca-title > span {
+    background-color: #FF9B71;
+    width: 400px;
+    padding-bottom: 150px;
+}
