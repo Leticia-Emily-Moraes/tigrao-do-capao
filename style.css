@@ -8,7 +8,7 @@
 }
 
 body {
-    color: #fff;
+    background-color: #fff;
 }
 
 nav {
@@ -166,4 +166,58 @@ section > .conheca-title {
     background-color: #FF9B71;
     width: 400px;
     padding-bottom: 150px;
+}
+
+.logo > h4 {
+    font-family: 'Roboto';
+    font-size: 38px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+footer > div {
+    display: flex;
+}
+
+footer > div > ul {
+    list-style: none;
+}
+
+footer > div > ul > li {
+    font-size: 38px;
+}
+
+footer > div > ul > li > span {
+    color: #FE5F44;
+}
+
+footer > .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.direitos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.07em;
+}
+
+.linha-footer{
+    margin-bottom: 60px;
+    width: 1300px;
+    height: 4px;
+    background: #000000;
+    margin-top: 22px;
+    margin-left: 110px;
 }
