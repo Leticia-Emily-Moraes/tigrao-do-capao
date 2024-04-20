@@ -39,6 +39,12 @@ ul > li {
     font-weight: 600;
     font-size: 38px;
     letter-spacing: -0.07em;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #FE5F44;
+    transition: 0.3s;
 }
 
 nav > h4 {
