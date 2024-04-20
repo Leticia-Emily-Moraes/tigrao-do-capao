@@ -24,7 +24,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: #000;    
-    /* padding: 60px 120px; */
 }
 
 nav > ul {
@@ -54,7 +53,7 @@ nav > h4 {
     letter-spacing: -0.07em;
 }
 
-.linha{
+.linha {
     width: 1300px;
     height: 4px;
     background: #000000;
@@ -134,7 +133,6 @@ article > .card {
     display: flex;
     gap: 20px;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .title-card> h4 {
@@ -209,6 +207,12 @@ footer > div > ul > li > span {
     color: #FE5F44;
 }
 
+span:hover {
+    color: #000;
+    transition: 0.3s;
+}
+
+
 footer > .logo {
     display: flex;
     flex-direction: column;
@@ -227,7 +231,7 @@ footer > .logo {
     letter-spacing: -0.07em;
 }
 
-.linha-footer{
+.linha-footer {
     margin-bottom: 60px;
     width: 1300px;
     height: 4px;
