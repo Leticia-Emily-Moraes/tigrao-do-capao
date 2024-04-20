@@ -11,6 +11,14 @@ body {
     background-color: #fff;
 }
 
+.objeto {
+    position: absolute;
+    z-index: -1;
+    top: 250px;
+    right: 0px;
+    width: 956px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
