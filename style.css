@@ -102,24 +102,49 @@ article > .card {
 
     background: rgba(204, 204, 204, 0.1);
     border-radius: 36px;
+
+    padding: 54px;
+
+    color: #000;
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 300;
 }
 
-.card > h4 {
-    font-size: 48px;
+.card > p {
+    padding-top: 30px;
+}
+
+
+.card > .title-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.title-card> h4 {
+    font-size: 30px;
     font-family: 'Noto Sans';
-    font-size: 48px;
     letter-spacing: -0.07em;   
     color: #000000;
-
-    padding-bottom: 30px;
 }
 
-.card > h3 {
+.title-card > h3 {
     font-family: 'Noto Sans';
     font-weight: 800;
-    font-size: 38px;
+    font-size: 30px;
     letter-spacing: -0.07em;
     color: #FE5F44;
 }
 
+.title-card > .quadrado {
+    height: 20px;
+    width: 20px;
+    background-color: #FE5F44;
+}
 
+section > .planos {
+    display: flex;
+    gap: 50px;
+}
