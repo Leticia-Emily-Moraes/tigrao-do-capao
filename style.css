@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --white-1000: #fff;
+    --orange-100: #FE5F44;
+    --orange-500: #FF9B71;
+    --black-100:  #000;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: var(--white-1000);
 }
 
 .objeto {
@@ -23,7 +31,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000;    
+    color: var(--black-100);    
 }
 
 nav > ul {
@@ -42,7 +50,7 @@ ul > li {
 }
 
 li:hover {
-    color: #FE5F44;
+    color: var(--orange-100);
     transition: 0.3s;
 }
 
@@ -56,7 +64,7 @@ nav > h4 {
 .linha {
     width: 1300px;
     height: 4px;
-    background: #000000;
+    background: var(--black-100);
     margin-top: 22px;
 }
 
@@ -73,7 +81,7 @@ section > h1 {
     font-weight: 700;
     font-size: 148px;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: var(--black-100);
 
     padding-bottom: 250px;
 }
@@ -87,7 +95,7 @@ article > h2 {
     font-family: 'Noto Sans';
     font-size: 48px;
     letter-spacing: -0.07em;   
-    color: #000000;
+    color: var(--black-100);
 
     padding-bottom: 30px;
 }
@@ -98,7 +106,7 @@ article > p {
     font-size: 40px;
     line-height: 47px;
 
-    color: #000000;
+    color: var(--black-100);
 
     padding-bottom: 150px;
 }
@@ -118,7 +126,7 @@ article > .card {
 
     padding: 54px;
 
-    color: #000;
+    color: var(--black-100);
     font-size: 26px;
     font-family: 'Roboto';
     font-weight: 300;
@@ -139,7 +147,7 @@ article > .card {
     font-size: 30px;
     font-family: 'Noto Sans';
     letter-spacing: -0.07em;   
-    color: #000000;
+    color: var(--black-100);
 }
 
 .title-card > h3 {
@@ -147,13 +155,13 @@ article > .card {
     font-weight: 800;
     font-size: 30px;
     letter-spacing: -0.07em;
-    color: #FE5F44;
+    color: var(--orange-100);
 }
 
 .title-card > .quadrado {
     height: 20px;
     width: 20px;
-    background-color: #FE5F44;
+    background-color: var(--orange-100);
 }
 
 section > .planos {
@@ -165,7 +173,7 @@ section > .planos {
     margin-bottom: 60px;
     width: 1300px;
     height: 4px;
-    background: #000000;
+    background: var(--black-100);
     margin-top: 22px;
 }
 
@@ -175,7 +183,7 @@ section > .conheca-title {
 }
 
 .conheca-title > span {
-    background-color: #FF9B71;
+    background-color: var(--orange-500);
     width: 400px;
     padding-bottom: 150px;
 }
@@ -204,11 +212,11 @@ footer > div > ul > li {
 }
 
 footer > div > ul > li > span {
-    color: #FE5F44;
+    color: var(--orange-100);
 }
 
 span:hover {
-    color: #000;
+    color: var(--black-100);
     transition: 0.3s;
 }
 
@@ -235,7 +243,7 @@ footer > .logo {
     margin-bottom: 60px;
     width: 1300px;
     height: 4px;
-    background: #000000;
+    background: var(--black-100);
     margin-top: 22px;
     margin-left: 110px;
 }
