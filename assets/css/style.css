@@ -5,7 +5,7 @@
     --white-1000: #fff;
     --orange-100: #FE5F44;
     --orange-500: #FF9B71;
-    --black-100:  #000;
+    --black-100: #000;
 }
 
 
@@ -17,233 +17,305 @@
 
 body {
     background-color: var(--white-1000);
+    width: 100vw;
+    height: 100vh;
 }
 
-.objeto {
+#objeto {
     position: absolute;
-    z-index: -1;
-    top: 250px;
-    right: 0px;
-    width: 956px;
+    z-index: -3;
+    width: 100%;
+    top: 15%;
+    right: -36%;
+}
+#objeto img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/* #objeto #quadrado-centro{
+    background-color: #FF9B71;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+}
+#objeto #quadrado-direita{
+    background-color: #FD2316;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    transform: skewy(50deg);
+    transform-origin: -5px -5px;
+}
+#objeto #quadrado-baixo{
+    background-color: #FE5F44;
+    position: relative;
+    width: 100px;
+    height: 500px;
+    bottom: 5px;
+    transform: skewX(40deg);
+    transform-origin: 0 0;
+} */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--black-100);    
+    color: var(--black-100);
+    width: 100%;
+
 }
 
-nav > ul {
+header nav h4 {
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+    letter-spacing: -0.07em;
+}
+
+header nav ul {
     display: flex;
+    gap: .5em;
     text-decoration: none;
     list-style: none;
-    gap: 110px;
 }
 
-ul > li {
+header nav ul li {
     font-family: 'Noto Sans';
     font-weight: 600;
-    font-size: 38px;
     letter-spacing: -0.07em;
     cursor: pointer;
 }
 
-li:hover {
+header nav ul li:hover,
+header nav ul li.active {
     color: var(--orange-100);
     transition: 0.3s;
 }
 
-nav > h4 {
-    font-size: 48px;
-    font-family: 'Noto Sans';
-    font-size: 48px;
-    letter-spacing: -0.07em;
-}
-
-.linha {
-    width: 1300px;
-    height: 4px;
+hr{
+    width: 100%;
+    height: 2px;
     background: var(--black-100);
-    margin-top: 22px;
+    border: none;
+    margin-top: 5px;
 }
 
-header {
-    padding: 60px 120px;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-main > section {
-    margin: 0px 120px;
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 50px;
 }
 
-section > h1 {
+.presentation h1 {
     font-family: 'Noto Sans';
     font-weight: 700;
-    font-size: 148px;
+    font-size: 2rem;
+    letter-spacing: -0.07em;
+    text-align: left;
+    margin: auto;
+    color: var(--black-100);
+}
+
+.presentation article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.presentation article h3 {
+    font-family: 'Noto Sans';
     letter-spacing: -0.07em;
     color: var(--black-100);
-
-    padding-bottom: 250px;
 }
 
-section > article {
-    padding: 56px;
-}
-
-article > h2 {
-    font-size: 48px;
-    font-family: 'Noto Sans';
-    font-size: 48px;
-    letter-spacing: -0.07em;   
-    color: var(--black-100);
-
-    padding-bottom: 30px;
-}
-
-article > p {
+.presentation article p {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 40px;
-    line-height: 47px;
-
+    width: 90%;
+    font-size: 1.2rem;
     color: var(--black-100);
-
-    padding-bottom: 150px;
 }
 
-article > img {
+img {
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    object-fit: cover;
+    height: 400px;
 }
 
-article > .card {
-    width: 630px;
-    height: 692.39px;
+.planos {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
 
+.card {
+    width: 95%;
+    padding:30px 20px;
     background: rgba(204, 204, 204, 0.1);
-    border-radius: 36px;
-
-    padding: 54px;
-
+    border-radius: 30px;
     color: var(--black-100);
-    font-size: 26px;
     font-family: 'Roboto';
     font-weight: 300;
-}
-
-.card > p {
-    padding-top: 30px;
-}
-
-
-.card > .title-card {
     display: flex;
-    gap: 20px;
-    align-items: center;
+    flex-direction: column;
+    gap: 50px
 }
 
-.title-card> h4 {
-    font-size: 30px;
+.card p {
+    font-size: 1.5rem;
+}
+
+.card .title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+}
+
+.title-card h4::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: var(--orange-100);
+    display: inline-block;
+    margin-right: 10px;
+}
+.title-card h4{
+    font-size: 1.7rem;
     font-family: 'Noto Sans';
-    letter-spacing: -0.07em;   
+    letter-spacing: -0.07em;
     color: var(--black-100);
 }
 
-.title-card > h3 {
+.title-card h3 {
     font-family: 'Noto Sans';
     font-weight: 800;
-    font-size: 30px;
+    font-size: 1.7rem;
     letter-spacing: -0.07em;
     color: var(--orange-100);
 }
 
-.title-card > .quadrado {
+.title-card .quadrado {
     height: 20px;
     width: 20px;
     background-color: var(--orange-100);
 }
+section h2{
+    font-family: 'Noto Sans';
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -0.07em;
+    color: var(--black-100);
+}
+section p {
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: var(--black-100);
 
-section > .planos {
-    display: flex;
-    gap: 50px;
+}
+section .conheca-title {
+    font-size: 2.2rem;
+    font-family: 'Noto Sans';
 }
 
-.linha-conheca {
-    margin-bottom: 60px;
-    width: 1300px;
-    height: 4px;
-    background: var(--black-100);
-    margin-top: 22px;
-}
-
-section > .conheca-title {
-    font-size: 125px;
-    margin-top: 22px;
-}
-
-.conheca-title > span {
+.conheca-title span {
     background-color: var(--orange-500);
     width: 400px;
-    padding-bottom: 150px;
-}
-
-.logo > h4 {
-    font-family: 'Roboto';
-    font-size: 38px;
+    padding-bottom: 20px;
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 0px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-
-footer > div {
+footer div{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+footer div img{
+    width: 50%;
+    object-fit: contain;
+    height: 100px;
 }
 
-footer > div > ul {
+footer div h4{
+    font-family: 'Noto Sans';
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -0.07em;
+    color: var(--black-100);
+}
+footer div article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer article ul {
     list-style: none;
 }
-
-footer > div > ul > li {
-    font-size: 38px;
+footer article ul li {
+    font-family: 'Noto Sans';
+    font-weight: 600;
+    letter-spacing: -0.07em;
+    cursor: pointer;
+    color: var(--black-100);
+    margin: 10px;
 }
 
-footer > div > ul > li > span {
+footer article ul li span {
     color: var(--orange-100);
 }
 
-span:hover {
+footer article ul li span:hover {
     color: var(--black-100);
     transition: 0.3s;
 }
 
-
-footer > .logo {
-    display: flex;
-    flex-direction: column;
-}
-
 .direitos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 35px;
-
+    padding: 15px;
+    text-align: center;
     font-family: 'Roboto';
     font-weight: lighter;
-    font-size: 28px;
     line-height: 33px;
     letter-spacing: -0.07em;
-}
-
-.linha-footer {
-    margin-bottom: 60px;
-    width: 1300px;
-    height: 4px;
-    background: var(--black-100);
-    margin-top: 22px;
-    margin-left: 110px;
 }
